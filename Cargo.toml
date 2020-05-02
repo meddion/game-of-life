@@ -1,0 +1,16 @@
+[package]
+name = "playground"
+version = "0.1.0"
+authors = ["meddion <volodia23byk@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+log = { version = "0.4.8", features = ["serde"] }
+rand = "0.7.3"
+amethyst = {git = "https://github.com/amethyst/amethyst.git", branch = "master"}
+
+[features]
+default = ["amethyst/vulkan"]
+
+[profile.dev] 
+debug = 0
